@@ -2,18 +2,28 @@ body {
   background-image: url(../img/background.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  background-color: #0c75a0;
+    }
 
+.wrapper {
+  margin: 0 auto;
+  position: relative;
   width: 1000px;
-  }
+   }
 
 .header {
   background-color: white;
   height: 175px;
-  margin: 0 auto;
   padding-top: 10px;
   text-align: center;
-  width: 1000px;
+    }
+
+  .header p.logo {
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    color: #41a1b9;
+    z-index: 1;
   }
 
   .clearfix:after {
@@ -26,11 +36,16 @@ body {
 
 .image {
   float: left;
+  height: 175px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .contacts {
   float: right;
   color: #41a1b9;
+  margin-right: 20px;
 
 }
 
@@ -42,30 +57,26 @@ body {
 
 .header li {
   float: left;
-  display: block;
-  width: 50px;
   font-size: 10px;
+  width: 50px;
 }
+
 .header a {
   color: #41a1b9;
+  display: block;
+
 
   }
 
   .main {
     background-color: #303030;
     display: table;
-    -webkit-box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.75);
     position: relative;
     margin: 0 auto;
     width: 100%;
-  }
-
-  .main {
-  display: table-cell;
-  text-align: center;
-  width: 100%;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
   }
 
 ul.main {
@@ -74,13 +85,15 @@ ul.main {
     float: left;
     list-style: none;
     width: 1000px;
-}
+    z-index: 200;
+    }
 
  .menu {
    display: block;
-   box-shadow: 0 5px 0;
    border-bottom: 1px solid black;
- }
+    z-index: 100
+   }
+
 ul:after {
     display: block;
     content: '';
@@ -109,7 +122,7 @@ ul.submenu {
     display: none;
     position: absolute;
     width: 130px;
-    top: 37px;
+    top: 100%;
     background-color: #303030;
     }
 
@@ -125,54 +138,81 @@ ul.submenu li a:hover {
 
 ul.menu li:hover ul.submenu {
     display: block;
-}
-.container {
-  background-color: white;
+    z-index: 300;
+    }
+
+.container3 {
+  float: left;
+  width: 100%;
+  background-color: #edeef0;
   overflow: hidden;
+  position: relative;
+  }
+
+.container2 {
+  background-color: white;
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 20%;
+}
+
+.container {
+  background-color: #edeef0;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  right: 60%;
 }
 
 .info {
   background-color: #edeef0;
   display: flex;
   float: left;
-  min-height: 50vh;
-  width: 20%;
+  width: 18%;
   flex-direction: column;
-
+  position: relative;
+  left: 81%;
 }
 
 .row1 {
-  border: 1px solid #c7cacf;
-  border-bottom: 0;
+/*  border: 1px solid #c7cacf;
+  border-bottom: 0;*/
   }
 
 .row2 {
-  border: 1px solid #c7cacf;
+  /*border: 1px solid #c7cacf;*/
   flex-grow: 2;
 }
 
 .row3 {
-  border: 1px solid #c7cacf;
-  border-top: 0;
+  /*border: 1px solid #c7cacf;
+  border-top: 0;*/
   flex-grow: 1;
 }
 
 .content {
   background-color: white;
   float: left;
-  min-height: 50vh;
-  width: 60%;
+  width: 58%;
+  position: relative;
+  left: 83%;
+  z-index: 500;
 }
 
 .news {
   background-color: #edeef0;
-  border-left: 1px solid #c7cacf;
+  /*border-left: 1px solid #c7cacf;*/
   float: right;
-  min-height: 50vh;
-  width: 19%;
+  width: 18%;
+  position: relative;
+  left: 79%;
+  z-index: 500;
 }
 
 .footer {
+  background-color: #0c75a0;
   color: white;
   font-size: 12px;
   padding-top: 20px;
