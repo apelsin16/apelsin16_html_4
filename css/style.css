@@ -147,7 +147,7 @@ ul.menu li:hover ul.submenu {
     z-index: 300;
     }
 
-.container3 {
+/*.container3 {
   float: left;
   width: 100%;
   background-color: #edeef0;
@@ -161,29 +161,31 @@ ul.menu li:hover ul.submenu {
   width: 100%;
   position: relative;
   right: 20%;
-}
+}*/
 
 .container {
-  background-color: #edeef0;
-  float: left;
+  background-color: white;
+   border-left: 200px solid #edeef0;
+   border-right: 200px solid #edeef0;
+  /*position: relative;
   overflow: hidden;
   width: 100%;
-  position: relative;
-  right: 60%;
+  right: 60%;*/
 }
 
 .info {
-  background-color: #edeef0;
   display: flex;
   float: left;
-  width: 18%;
   flex-direction: column;
-  position: relative;
-  left: 81%;
+  width: 200px;
+  margin-left: -200px;
+  /*left: 81%;
+  background-color: #edeef0;
+  position: relative;*/
 }
 
 .row1 {
-/*  border: 1px solid #c7cacf;
+  /*border: 1px solid #c7cacf;
   border-bottom: 0;*/
   }
 
@@ -199,22 +201,24 @@ ul.menu li:hover ul.submenu {
 }
 
 .content {
-  background-color: white;
+  padding: 10px;
+  width: 90%;
+  /*left: 83%;
   float: left;
-  width: 58%;
+  background-color: white;
   position: relative;
-  left: 83%;
-  z-index: 1500;
+  z-index: 1500;*/
 }
 
 .news {
-  background-color: #edeef0;
-  /*border-left: 1px solid #c7cacf;*/
+  width: 200px;
   float: right;
-  width: 18%;
+  margin-right: -200px;
+  /*background-color: #edeef0;
   position: relative;
+  border-left: 1px solid #c7cacf;
   left: 79%;
-  z-index: 1000;
+  z-index: 1000;*/
 }
 
 .footer {
