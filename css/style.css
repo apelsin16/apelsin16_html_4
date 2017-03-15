@@ -9,14 +9,17 @@ body {
   margin: 0 auto;
   position: relative;
   width: 1000px;
-   }
+     }
 
 .header {
   background-color: white;
   height: 175px;
   padding-top: 10px;
   text-align: center;
-    }
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+      }
 
   .header p.logo {
     position: absolute;
@@ -40,7 +43,7 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-}
+  }
 
 .contacts {
   float: right;
@@ -64,8 +67,6 @@ body {
 .header a {
   color: #41a1b9;
   display: block;
-
-
   }
 
   .main {
@@ -74,8 +75,10 @@ body {
     position: relative;
     margin: 0 auto;
     width: 100%;
-
-  }
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+      }
 
 ul.main {
     border-bottom: 1px solid black;
@@ -83,16 +86,15 @@ ul.main {
     float: left;
     list-style: none;
     width: 1000px;
-    z-index: 200;
     }
 
  .menu {
    display: block;
    border-bottom: 1px solid black;
-    z-index: 100
-    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+   z-index: 100;
    }
 
 ul:after {
@@ -100,7 +102,7 @@ ul:after {
     content: '';
     clear: both;
     float: none;
-}
+    }
 
  ul.menu li {
     display: inline-block;
@@ -144,8 +146,10 @@ ul.submenu li a:hover {
 
 ul.menu li:hover ul.submenu {
     display: block;
-    z-index: 300;
-    }
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+      }
 
 /*.container3 {
   float: left;
@@ -165,64 +169,74 @@ ul.menu li:hover ul.submenu {
 
 .container {
   background-color: white;
-   border-left: 200px solid #edeef0;
-   border-right: 200px solid #edeef0;
+   -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+   overflow: hidden;
   /*position: relative;
-  overflow: hidden;
   width: 100%;
+  border-left: 200px solid #edeef0;
+  border-right: 200px solid #edeef0;
   right: 60%;*/
 }
 
 .info {
   display: flex;
   float: left;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+  width: 20%;
   flex-direction: column;
-  width: 200px;
-  margin-left: -200px;
-  /*left: 81%;
   background-color: #edeef0;
+  /*left: 81%;
+  margin-left: -200px;
+  padding: 10px;
   position: relative;*/
 }
 
 .row1 {
-  /*border: 1px solid #c7cacf;
-  border-bottom: 0;*/
+  border: 1px solid #c7cacf;
+  border-bottom: 0;
   }
 
 .row2 {
-  /*border: 1px solid #c7cacf;*/
+  border: 1px solid #c7cacf;
   flex-grow: 2;
 }
 
 .row3 {
-  /*border: 1px solid #c7cacf;
-  border-top: 0;*/
+  border: 1px solid #c7cacf;
+  border-top: 0;
   flex-grow: 1;
 }
 
 .content {
-  padding: 10px;
-  width: 90%;
-  /*left: 83%;
   float: left;
+  padding-bottom: 2000px;
+  margin-bottom: -2000px;
+  width: 60%;
+  /*left: 83%;
   background-color: white;
   position: relative;
   z-index: 1500;*/
 }
 
 .news {
-  width: 200px;
+  width: 19%;
   float: right;
-  margin-right: -200px;
-  /*background-color: #edeef0;
-  position: relative;
   border-left: 1px solid #c7cacf;
+  padding-bottom: 2000px;
+  background-color: #edeef0;
+  margin-bottom: -2000px;
+  /*margin-right: -200px;
+  padding: 10px;
+  position: relative;
   left: 79%;
   z-index: 1000;*/
 }
 
 .footer {
-  background-color: #0c75a0;
+
   color: white;
   font-size: 12px;
   padding-top: 20px;
