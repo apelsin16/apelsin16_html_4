@@ -74,6 +74,9 @@ body {
   display: block;
   }
 
+.main img {
+display: block;
+}
 ul.main {
     float: left;
     list-style: none;
@@ -82,9 +85,6 @@ ul.main {
 
  .menu .clearfix {
    border-bottom: 1px solid black;
-   -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
    position: relative;
    }
 
@@ -144,9 +144,10 @@ ul.menu li:hover ul.submenu {
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
       }
 
-.w a::after {
-  content: "\2BC6";
-  color: white;
+.wrapper .menu {
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
 }
 /*.container3 {
   float: left;
