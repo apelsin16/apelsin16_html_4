@@ -9,6 +9,9 @@ body {
   margin: 0 auto;
   position: relative;
   width: 1000px;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
      }
 
 .header {
@@ -16,10 +19,7 @@ body {
   height: 175px;
   padding-top: 10px;
   text-align: center;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-      }
+        }
 
   .header p.logo {
     position: absolute;
@@ -61,7 +61,12 @@ body {
 .header li {
   float: left;
   font-size: 10px;
-  width: 50px;
+  /*width: 50px;*/
+}
+
+.header img {
+  display: block;
+  padding: 5px;
 }
 
 .header a {
@@ -69,27 +74,13 @@ body {
   display: block;
   }
 
-  .main {
-    background-color: #303030;
-    display: table;
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
-      }
-
 ul.main {
-    border-bottom: 1px solid black;
-    display: block;
     float: left;
     list-style: none;
     width: 1000px;
     }
 
- .menu {
-   display: block;
+ .menu .clearfix {
    border-bottom: 1px solid black;
    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
@@ -105,7 +96,9 @@ ul:after {
     }
 
  ul.menu li {
-    display: inline-block;
+    background-color: #303030;
+    display: block;
+    float: left;
     position: relative;
     width: 13.8%;
     }
@@ -122,7 +115,7 @@ ul.menu li a:hover {
     background-color: #303030;
 }
 
-ul.submenu {
+  ul.submenu {
     display: none;
     position: absolute;
     width: 130px;
@@ -151,6 +144,10 @@ ul.menu li:hover ul.submenu {
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
       }
 
+.w::after {
+  content: "\2BC6";
+  color: white;
+}
 /*.container3 {
   float: left;
   width: 100%;
