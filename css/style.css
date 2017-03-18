@@ -22,7 +22,9 @@ body {
  .head {
   background-image: url('../img/logo.png');
   height: 175px;
+  width: 350px;
   background-repeat: no-repeat;
+  float: left;
   }
 
   .header p.logo {
